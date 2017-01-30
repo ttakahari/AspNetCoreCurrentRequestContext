@@ -1,0 +1,33 @@
+﻿{
+  "title": "AspNetCoreCurrentRequestContext",
+  "version": "1.0.0",
+  "description": "The library for using HttpContext.Current on ASP.NET Core applications.",
+  "authors": [ "t.takahari" ],
+  "copyright": "Copyright t.takahari 2017",
+
+  "dependencies": {
+    "Microsoft.AspNetCore.Http.Abstractions": "[1.0.0,)"
+  },
+
+  "frameworks": {
+    "netstandard1.6": {
+    },
+    "net46": {
+    }
+  },
+
+  "buildOptions": {
+    "xmlDoc": true
+  },
+
+  "packOptions": {
+    "owners": [ "t.takahari" ],
+    "requireLicenseAcceptance": false,
+    "licenseUrl": "http://opensource.org/licenses/MIT",
+    "projectUrl": "https://github.com/ttakahari/AspNetCoreCurrentRequestContext",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/ttakahari/AspNetCoreCurrentRequestContext"
+    }
+  }
+}

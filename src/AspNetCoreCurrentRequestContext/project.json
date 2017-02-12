@@ -1,7 +1,7 @@
 ﻿{
   "title": "AspNetCoreCurrentRequestContext",
   "version": "1.0.0",
-  "description": "The library for using HttpContext.Current on ASP.NET Core applications.",
+  "description": "The library to enable HttpContext.Current on ASP.NET Core applications.",
   "authors": [ "t.takahari" ],
   "copyright": "Copyright t.takahari 2017",
 

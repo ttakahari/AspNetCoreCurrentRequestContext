@@ -1,20 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.15
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C2144E33-D9FC-4BCF-93CB-EA51F03DA2D4}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{85EFE18A-8510-4378-8B33-A90C472D7D70}"
-	ProjectSection(SolutionItems) = preProject
-		global.json = global.json
-	EndProjectSection
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "AspNetCoreCurrentRequestContext", "src\AspNetCoreCurrentRequestContext\AspNetCoreCurrentRequestContext.xproj", "{88347715-2F8B-4542-B56D-15F042682D7C}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{5DF6D7FE-5297-4463-8833-9879D905C24C}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "AspNetCoreCurrentRequestContext.Tests", "test\AspNetCoreCurrentRequestContext.Tests\AspNetCoreCurrentRequestContext.Tests.xproj", "{393FCCB0-D6DB-4D80-BE1C-A3F28F44A869}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreCurrentRequestContext", "src\AspNetCoreCurrentRequestContext\AspNetCoreCurrentRequestContext.csproj", "{88347715-2F8B-4542-B56D-15F042682D7C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreCurrentRequestContext.Tests", "test\AspNetCoreCurrentRequestContext.Tests\AspNetCoreCurrentRequestContext.Tests.csproj", "{393FCCB0-D6DB-4D80-BE1C-A3F28F44A869}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

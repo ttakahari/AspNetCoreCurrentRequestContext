@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>The library to enable HttpContext.Current on ASP.NET Core applications.</Description>
+    <Copyright>Copyright t.takahari 2017</Copyright>
+    <AssemblyTitle>AspNetCoreCurrentRequestContext</AssemblyTitle>
+    <Authors>t.takahari</Authors>
+    <TargetFrameworks>netstandard1.6;net46</TargetFrameworks>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <AssemblyName>AspNetCoreCurrentRequestContext</AssemblyName>
+    <PackageId>AspNetCoreCurrentRequestContext</PackageId>
+    <PackageProjectUrl>https://github.com/ttakahari/AspNetCoreCurrentRequestContext</PackageProjectUrl>
+    <PackageLicenseUrl>http://opensource.org/licenses/MIT</PackageLicenseUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/ttakahari/AspNetCoreCurrentRequestContext</RepositoryUrl>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="1.0.2" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net46' ">
+    <Reference Include="System" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+
+</Project>

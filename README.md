@@ -1,6 +1,6 @@
 # AspNetCoreCurrentRequestContext
 
-Enable HttpContext.Current on ASP.NET Core applications.
+Enable to use HttpContext.Current on ASP.NET Core applications.
 
 ## Install
 

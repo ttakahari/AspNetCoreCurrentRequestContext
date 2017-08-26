@@ -6,7 +6,7 @@
         <AssemblyTitle>AspNetCoreCurrentRequestContext</AssemblyTitle>
         <Authors>t.takahari</Authors>
         <Version>1.0.0</Version>
-        <TargetFrameworks>netstandard1.6;net46</TargetFrameworks>
+        <TargetFrameworks>netstandard2.0;netstandard1.6;net46</TargetFrameworks>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
         <AssemblyName>AspNetCoreCurrentRequestContext</AssemblyName>
         <PackageId>AspNetCoreCurrentRequestContext</PackageId>
@@ -19,8 +19,12 @@
         <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
     </PropertyGroup>
 
-    <ItemGroup>
-        <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="[1.0.0,)" />
+    <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard2.0' ">
+        <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="[2.0.0,)" />
+    </ItemGroup>
+    
+    <ItemGroup Condition=" '$(TargetFramework)' != 'netstandard2.0' ">
+        <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="[1.0.0,2.0.0)" />
     </ItemGroup>
 
 </Project>

@@ -2,6 +2,9 @@
 
 Enable to use HttpContext.Current on ASP.NET Core applications.
 
+[![AppVeyor](https://img.shields.io/appveyor/ci/gruntjs/grunt.svg?style=plastic)](https://ci.appveyor.com/project/ttakahari/AspNetCoreCurrentRequestContext)
+[![NuGet](https://img.shields.io/nuget/v/AspNetCoreCurrentRequestContext.svg?style=plastic)](https://www.nuget.org/packages/AspNetCoreCurrentRequestContext/)
+
 ## Install
 
 from NuGet - [AspNetCoreCurrentRequestContext](https://www.nuget.org/packages/AspNetCoreCurrentRequestContext/)

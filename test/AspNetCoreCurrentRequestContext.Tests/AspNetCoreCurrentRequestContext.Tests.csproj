@@ -1,13 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFrameworks>netcoreapp2.0;netcoreapp1.1;netcoreapp1.0;net461;net46</TargetFrameworks>
+        <TargetFrameworks>netcoreapp2.1;netcoreapp2.0;netcoreapp1.1;netcoreapp1.0;net461;net46</TargetFrameworks>
         <AssemblyName>AspNetCoreCurrentRequestContext.Tests</AssemblyName>
         <PackageId>AspNetCoreCurrentRequestContext.Tests</PackageId>
         <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
         <RuntimeFrameworkVersion Condition=" '$(TargetFramework)' == 'netcoreapp1.0' ">1.0.4</RuntimeFrameworkVersion>
         <RuntimeFrameworkVersion Condition=" '$(TargetFramework)' == 'netcoreapp1.1' ">1.1.0</RuntimeFrameworkVersion>
         <RuntimeFrameworkVersion Condition=" '$(TargetFramework)' == 'netcoreapp2.0' ">2.0.0</RuntimeFrameworkVersion>
+        <RuntimeFrameworkVersion Condition=" '$(TargetFramework)' == 'netcoreapp2.1' ">2.1.0</RuntimeFrameworkVersion>
         <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
         <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
         <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
@@ -23,11 +24,11 @@
         <PackageReference Include="xunit" Version="2.2.0" />
     </ItemGroup>
 
-    <ItemGroup Condition=" '$(TargetFramework)' == 'netcoreapp2.0' ">
+    <ItemGroup Condition=" '$(TargetFramework)' == 'netcoreapp2.0' OR '$(TargetFramework)' == 'netcoreapp2.1' ">
         <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.0.0" />
     </ItemGroup>
 
-    <ItemGroup Condition=" '$(TargetFramework)' != 'netcoreapp2.0' ">
+    <ItemGroup Condition=" '$(TargetFramework)' != 'netcoreapp2.0' AND '$(TargetFramework)' != 'netcoreapp2.1' ">
         <PackageReference Include="Microsoft.AspNetCore.Http" Version="1.0.0" />
     </ItemGroup>
 
